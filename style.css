@@ -1,0 +1,54 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* HEADER */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    background-color: #eee;
+}
+
+nav a {
+    margin-left: 15px;
+    text-decoration: none;
+    color: black;
+}
+
+/* GLAVNI DIO */
+main {
+    display: flex;
+    padding: 20px;
+}
+
+.tekst {
+    width: 60%;
+}
+
+.slika {
+    width: 40%;
+    text-align: center;
+}
+
+.slika img {
+    max-width: 100%;
+}
+
+/* GALERIJA */
+.galerija {
+    padding: 20px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+.grid img {
+    width: 100%;
+}
+``
