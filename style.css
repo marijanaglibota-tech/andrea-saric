@@ -3,62 +3,61 @@ body {
     font-family: Arial, sans-serif;
 }
 
-/* CELA STRANICA */
-.stranica {
-    display: flex;
-    height: 100vh;
-}
-
-/* LIJEVI MENI */
-.meni {
-    width: 120px;
-    border-right: 2px solid black;
+.pocetna {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-top: 30px;
-}
-
-.meni a {
-    border: 2px solid black;
-    padding: 10px;
-    margin-bottom: 15px;
-    text-decoration: none;
-    color: black;
-    width: 80px;
-    text-align: center;
-}
-
-/* DESNI DIO */
-.sadrzaj {
-    flex: 1;
     padding: 20px;
 }
 
-/* NASLOV GORE */
+/* NASLOV */
 .naslov {
     border: 2px solid black;
-    padding: 10px;
-    width: fit-content;
-    margin-left: auto;
+    padding: 10px 30px;
+    margin-bottom: 30px;
 }
 
-/* SREDINA STRANICE */
+/* SREDINA: MP + SLIKA */
 .sredina {
     display: flex;
     align-items: center;
-    justify-content: space-around;
-    margin-top: 40px;
+    gap: 40px;
+    margin-bottom: 40px;
 }
 
-/* MP */
+/* INICIJALI */
 .inicijali {
-    font-size: 120px;
+    position: relative;
     font-weight: bold;
+}
+
+.inicijali .m {
+    font-size: 100px;
+}
+
+.inicijali .p {
+    font-size: 100px;
+    position: absolute;
+    top: -30px;   /* P je više od M */
+    left: 60px;
 }
 
 /* SLIKA */
 .slika img {
-    width: 200px;
+    width: 180px;
     border: 2px solid black;
+}
+
+/* DONJI MENI */
+.donji-meni {
+    display: flex;
+    gap: 20px;
+}
+
+.donji-meni a {
+    border: 2px solid black;
+    padding: 15px 25px;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
 }
