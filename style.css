@@ -31,16 +31,16 @@ body {
     font-weight: bold;
 }
 
-.inicijali .m {
-    font-size: 100px;
-}
+    .inicijali .m {
+        font-size: 100px;
+    }
 
-.inicijali .p {
-    font-size: 100px;
-    position: absolute;
-    top: -30px;   /* P je više od M */
-    left: 60px;
-}
+    .inicijali .p {
+        font-size: 100px;
+        position: absolute;
+        top: -30px; /* P je više od M */
+        left: 60px;
+    }
 
 /* SLIKA */
 .slika img {
@@ -54,13 +54,13 @@ body {
     gap: 20px;
 }
 
-.donji-meni a {
-    border: 2px solid black;
-    padding: 15px 25px;
-    text-decoration: none;
-    color: black;
-    font-weight: bold;
-}
+    .donji-meni a {
+        border: 2px solid black;
+        padding: 15px 25px;
+        text-decoration: none;
+        color: black;
+        font-weight: bold;
+    }
 body {
     font-family: Arial, sans-serif;
     margin: 20px;
@@ -86,7 +86,7 @@ body {
 
 /* POZICIJE */
 .lijevi {
-    grid-row: 1 / span 2;   /* visoki lijevi kvadrat */
+    grid-row: 1 / span 2; /* visoki lijevi kvadrat */
 }
 
 .sredina-gore {
@@ -108,3 +108,53 @@ body {
     grid-column: 3;
     grid-row: 2;
 }
+.povratak {
+    margin-top: 30px;
+}
+
+.botun {
+    border: 2px solid black;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    display: inline-block;
+}
+
+    .botun:hover {
+        background-color: #eee;
+    }
+/* =========================
+   LEGENDA – KAO ŽIVOT,
+   ALI KVADRATI JEDAN ISPOD DRUGOG
+   ========================= */
+
+.legenda-stupac {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    max-width: 900px;
+}
+
+    .legenda-stupac .box {
+        border: 2px solid black;
+        padding: 20px;
+    }
+/* GALERIJA SLIKA */
+.galerija {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    max-width: 900px;
+}
+
+.slika-box {
+    border: 2px solid black;
+    padding: 10px;
+}
+
+    .slika-box img {
+        width: 100%;
+        height: auto;
+        display: block;
+    }
