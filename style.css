@@ -3,67 +3,62 @@ body {
     font-family: Arial, sans-serif;
 }
 
-/* HEADER */
-header {
+/* CELA STRANICA */
+.stranica {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 15px;
-    background-color: #eee;
+    height: 100vh;
 }
 
-nav a {
-    margin-left: 15px;
+/* LIJEVI MENI */
+.meni {
+    width: 120px;
+    border-right: 2px solid black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 30px;
+}
+
+.meni a {
+    border: 2px solid black;
+    padding: 10px;
+    margin-bottom: 15px;
     text-decoration: none;
     color: black;
-}
-
-/* GLAVNI DIO */
-main {
-    display: flex;
-    padding: 20px;
-}
-
-.tekst {
-    width: 60%;
-}
-
-.slika {
-    width: 40%;
+    width: 80px;
     text-align: center;
 }
 
-.slika img {
-    max-width: 100%;
-}
-
-/* GALERIJA */
-.galerija {
+/* DESNI DIO */
+.sadrzaj {
+    flex: 1;
     padding: 20px;
 }
 
-.grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 10px;
-}
-
-.grid img {
-    width: 100%;
-}
-``
-.zivot {
-    padding: 20px;
-    width: 60%;
-}
-
-.zivot h2 {
-    margin-bottom: 20px;
-}
-
-.zivot-okvir {
+/* NASLOV GORE */
+.naslov {
     border: 2px solid black;
-    padding: 15px;
-    margin-bottom: 15px;
-    background-color: #f9f9f9;
+    padding: 10px;
+    width: fit-content;
+    margin-left: auto;
+}
+
+/* SREDINA STRANICE */
+.sredina {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 40px;
+}
+
+/* MP */
+.inicijali {
+    font-size: 120px;
+    font-weight: bold;
+}
+
+/* SLIKA */
+.slika img {
+    width: 200px;
+    border: 2px solid black;
 }
