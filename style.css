@@ -61,3 +61,50 @@ body {
     color: black;
     font-weight: bold;
 }
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+
+.naslov-stranice {
+    margin-bottom: 20px;
+}
+
+/* GRID – 3 STUPCA */
+.zivot-grid {
+    display: grid;
+    grid-template-columns: 1fr 2fr 2fr;
+    grid-template-rows: auto auto;
+    gap: 20px;
+}
+
+/* SVI KVADRATI */
+.box {
+    border: 2px solid black;
+    padding: 15px;
+}
+
+/* POZICIJE */
+.lijevi {
+    grid-row: 1 / span 2;   /* visoki lijevi kvadrat */
+}
+
+.sredina-gore {
+    grid-column: 2;
+    grid-row: 1;
+}
+
+.sredina-dolje {
+    grid-column: 2;
+    grid-row: 2;
+}
+
+.desno-gore {
+    grid-column: 3;
+    grid-row: 1;
+}
+
+.desno-dolje {
+    grid-column: 3;
+    grid-row: 2;
+}
